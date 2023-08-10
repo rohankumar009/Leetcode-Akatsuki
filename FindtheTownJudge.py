@@ -11,4 +11,4 @@ class Solution:
             if trust_count[i] == n - 1 and trusted_by_count[i] == 0:
                 return i
         
-        return -1  # None found
+        return -1
