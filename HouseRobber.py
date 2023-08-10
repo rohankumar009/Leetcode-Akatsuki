@@ -1,5 +1,7 @@
 class Solution:
     def rob(self, nums: List[int]) -> int:
+
+        #dynamic- Bottom Up Solution
         n = len(nums)
     
         if n == 0:
