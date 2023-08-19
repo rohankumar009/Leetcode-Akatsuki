@@ -1,3 +1,5 @@
+#Done in basic bruteforce
+
 class Solution(object):
     def profitableSchemes(self, n, minProfit, group, profit):
         """
