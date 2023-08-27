@@ -1,5 +1,4 @@
-# Correction to be made
-
+# Fixed code and made it faster by avoiding unnecessary iterations and comparisons, run time is till O(n^2)
 
 class Solution:
     def threeSumClosest(self, nums: List[int], target: int) -> int:
@@ -12,6 +11,9 @@ class Solution:
             while left < right:
                 current_sum = nums[i] + nums[left] + nums[right]
                 
+                if current_sum == target:
+                    return current_sum
+
                 if abs(current_sum - target) < abs(closest_sum - target):
                     closest_sum = current_sum
 
